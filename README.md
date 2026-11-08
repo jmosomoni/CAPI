@@ -7,7 +7,7 @@ Application console de planning poker (projet M1). Python 3.10+, **aucune dépen
 ```bash
 git clone <URL_DU_DEPOT>
 cd <nom-du-depot>
-python3 main.py                                  # demande le chemin du backlog (Entrée = exemple fourni)
+python3 main.py                                  
 python3 main.py exemples/backlog-bibliotheque.json
 ```
 
