@@ -1,6 +1,6 @@
 # CAPI : planning poker
 
-Application console de planning poker (projet M1). Python 3.10+, **aucune dépendance**.
+Application console de planning poker.
 
 ## Lancer l'application
 
