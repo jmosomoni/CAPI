@@ -1,13 +1,13 @@
 # CAPI : planning poker
 
-Application console de planning poker (projet M1). Python 3.10+, **aucune dépendance**.
+Application console de planning poker.
 
 ## Lancer l'application
 
 ```bash
 git clone <URL_DU_DEPOT>
 cd <nom-du-depot>
-python3 main.py                                  # demande le chemin du backlog (Entrée = exemple fourni)
+python3 main.py                                  
 python3 main.py exemples/backlog-bibliotheque.json
 ```
 
@@ -24,18 +24,21 @@ La validation des votes (règle stricte, médiane...) arrive au sprint 2.
 
 ```json
 {
-  "projet": "Bibliothèque en ligne",
+  "projet": "CAPI : poker",
   "fonctionnalites": [
-    { "id": "F1", "titre": "Rechercher un livre par titre" }
+    { "id": "US-01", "titre": "Saisir le nombre de joueurs et leurs pseudos" },
+    { "id": "US-02", "titre": "Charger un backlog JSON et afficher la première fonctionnalité" },
+    { "id": "US-04", "titre": "Voter en secret puis révéler les votes" }
   ]
 }
 ```
 
-- `fonctionnalites` : liste non vide, obligatoire ; chaque élément a un `id` et un `titre`.
-- `projet` : facultatif.
-- `estimation` : facultatif, rempli par l'application dans un sprint ultérieur.
+- `projet` : facultatif ; le nom du projet dont on estime le backlog.
+- `fonctionnalites` : obligatoire, liste non vide ; chaque élément a un `id` unique et un `titre`.
+- `estimation` : facultatif ; c'est la difficulté retenue après le vote (par exemple `"2"`). Absente au départ, elle sera ajoutée par l'application quand la fonctionnalité aura été estimée.
 
-Exemples dans `exemples/`.
+
+
 
 ## Cartes
 
