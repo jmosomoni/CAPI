@@ -35,7 +35,7 @@ La validation des votes (règle stricte, médiane...) arrive au sprint 2.
 - `projet` : facultatif.
 - `estimation` : facultatif, rempli par l'application dans un sprint ultérieur.
 
-Exemples dans `exemples/`.
+
 
 ## Cartes
 
